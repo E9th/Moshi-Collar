@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat Heatstroke Monitor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <h1>Cat Heatstroke Monitor</h1>
+        <div id="status">
+            <h2>Status: <span id="statusText">Loading...</span></h2>
+        </div>
+        <div id="data">
+            <p>Temperature: <span id="temperature">--</span> °C</p>
+            <p>Humidity: <span id="humidity">--</span> %</p>
+            <p>Distance: <span id="distance">--</span> cm</p>
+            <p>Heatstroke Risk: <span id="heatStrokePercentage">--</span> %</p>
+        </div>
+    </div>
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-database.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
